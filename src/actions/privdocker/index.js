@@ -35,6 +35,7 @@ try {
                                 '--volume=' + arg_cwd + ':/osb/workdir',
                                 '--volume=/lib/modules/:/lib/modules/',
                                 '--volume=/var/run/docker.sock:/var/run/docker.sock',
+                                '--volume=/dev/:/dev/',
                                 arg_image,
                                 '/bin/bash',
                                         '-o', 'errexit',
